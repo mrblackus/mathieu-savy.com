@@ -764,7 +764,7 @@
 	}
 	
 	.timeline .blog-post {
-		width: 600px;
+		width: 520px;
 		-webkit-box-sizing: border-box; 
 		   -moz-box-sizing: border-box; 
 				box-sizing: border-box; 
@@ -1035,7 +1035,7 @@
 		
 		.blog-post-thumb a:last-child img { margin-right: 0; }
 		
-		.timeline .blog-post { width: 400px; }
+		.timeline .blog-post { width: 360px; }
 		
 	}
 	
