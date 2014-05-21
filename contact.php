@@ -19,6 +19,7 @@ if (strlen($name) && strlen($email) && strlen($content))
     if (false !== filter_var($email, FILTER_VALIDATE_EMAIL))
     {
         $mail = new PHPMailer();
+        $mail->CharSet = 'utf-8';
         $mail->From = $email;
         $mail->FromName = $name;
         $mail->addAddress("mathieu.savy@gmail.com", "Mathieu Savy");

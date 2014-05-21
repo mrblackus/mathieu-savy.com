@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1fdfd84e-9a70-48a4-8b41-051f79617468" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contact.php" afterPath="$PROJECT_DIR$/contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cv-mathieu.iws" />
@@ -30,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="704" column="19" selection-start="24191" selection-end="24191" vertical-scroll-proportion="0.564759" vertical-offset="10185" max-vertical-offset="14089">
+            <state line="704" column="19" selection-start="24191" selection-end="24191" vertical-scroll-proportion="-15.625" vertical-offset="10185" max-vertical-offset="14089">
               <folding>
                 <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -78,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="contact.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contact.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="41" selection-start="292" selection-end="292" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1247">
+            <state line="15" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.3323486" vertical-offset="0" max-vertical-offset="1262">
               <folding>
                 <element signature="e#6#89#0" expanded="true" />
               </folding>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/_layout/js/scripts.js" />
         <option value="$PROJECT_DIR$/_layout/css/layout.css" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/contact.php" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/contact.php" />
       </list>
     </option>
   </component>
@@ -314,7 +314,11 @@
       <created>1400676976576</created>
       <updated>1400676976576</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Remove links from portfolio images">
+      <created>1400679345410</created>
+      <updated>1400679345410</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -363,7 +367,8 @@
     <MESSAGE value="Portfolio done" />
     <MESSAGE value="Add google analytics" />
     <MESSAGE value="Contact form, smooth scrolling on anchor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contact form, smooth scrolling on anchor" />
+    <MESSAGE value="Remove links from portfolio images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove links from portfolio images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -703,18 +708,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="41" selection-start="292" selection-end="292" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="1247">
-          <folding>
-            <element signature="e#6#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="704" column="19" selection-start="24191" selection-end="24191" vertical-scroll-proportion="0.564759" vertical-offset="10185" max-vertical-offset="14089">
+        <state line="704" column="19" selection-start="24191" selection-end="24191" vertical-scroll-proportion="-15.625" vertical-offset="10185" max-vertical-offset="14089">
           <folding>
             <element signature="n#style#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -754,6 +750,15 @@
             <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#6;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1400679313000" expanded="true" signature="2543:2747" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="294" selection-end="294" vertical-scroll-proportion="0.3323486" vertical-offset="0" max-vertical-offset="1262">
+          <folding>
+            <element signature="e#6#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
