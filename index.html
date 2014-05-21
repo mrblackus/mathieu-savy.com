@@ -113,19 +113,19 @@
             <!-- // Menu // -->
             <ul class="sf-menu" id="menu">
                 <li class="current">
-                    <a href="index.html">About me</a>
+                    <a href="#about_me">About me</a>
                 </li>
                 <li>
-                    <a href="about-us.html">Education & Experiences</a>
+                    <a href="#education_exp">Education & Experiences</a>
                 </li>
                 <li>
-                    <a href="portfolio.html">Skills</a>
+                    <a href="#education_exp">Skills</a>
                 </li>
                 <li>
-                    <a href="blog.html">Portfolio</a>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a href="blog.html">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
 
@@ -141,7 +141,7 @@
 
 <div id="page-header">
 
-    <div class="row">
+    <div class="row" id="about_me">
         <div class="span12">
 
             <h2>About me</h2>
@@ -246,7 +246,7 @@
 
     <br><br>
 
-    <div class="row">
+    <div class="row" id="education_exp">
         <div class="span12">
 
             <div class="process-builder">
@@ -602,7 +602,7 @@
 
     <br><br>
 
-    <div class="row">
+    <div class="row" id="portfolio">
         <div class="span12">
 
             <div class="process-builder">
@@ -744,7 +744,7 @@
 
     <!-- /// FOOTER MIDDLE  //////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-    <div class="row">
+    <div class="row" id="contact">
         <div class="span3">&nbsp;</div>
         <div class="span6" id="footer-middle-widget-area-1">
 
@@ -757,15 +757,22 @@
                 <div class="textwidget">
                     <p>Feel free to contact me if you have any question ! ;)</p>
 
-                    <form>
+                    <div id="mail_confirmation">
+                        <div class="alert success">
+                            <i class="fa fa-check-circle-o"></i>Your email has been sent ! I will answer back as soon as possible !
+                        </div>
+                    </div>
+
+                    <form id="contact_form">
                         <label for="_name">Name</label>
                         <input type="text" name="name" id="_name">
 
                         <label for="_mail">Email</label>
-                        <input type="email" name="name" id="_mail">
+                        <input type="email" name="email" id="_mail">
 
                         <label for="_content">Message</label>
-                        <textarea name="name" id="_content" style="width: 500px;" rows="8"></textarea>
+                        <textarea name="content" id="_content" style="width: 500px;" rows="8"></textarea>
+                        <input type="submit" value="Send" />
                     </form>
                 </div><!-- end .textwidget -->
 
@@ -779,57 +786,7 @@
     <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
 </div><!-- end #footer-middle -->
-<div id="footer-bottom">
 
-    <!-- /// FOOTER BOTTOM  ///////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-    <div class="row">
-        <div class="span6" id="footer-bottom-widget-area-1">
-
-            <div class="widget widget_text">
-
-                <div class="textwidget">
-                    <p class="last">
-                        <img src="_layout/images/logo.png" alt="" class="responsive-img">
-                        <span class="hidden-tablet hidden-phone">Copyright &copy; 2014 Sapphire INC</span>
-                    </p>
-                </div><!-- end .textwidget -->
-
-            </div><!-- end .widget_text -->
-
-        </div><!-- end .span6 -->
-        <div class="span6 text-right" id="footer-bottom-widget-area-2">
-
-            <div class="widget ewf_widget_social_media">
-
-                <div class="fixed">
-
-                    <a href="#" class="facebook-icon social-icon">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" class="twitter-icon social-icon">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" class="googleplus-icon social-icon">
-                        <i class="fa fa-google-plus"></i>
-                    </a>
-                    <a href="#" class="pinterest-icon social-icon">
-                        <i class="fa fa-pinterest"></i>
-                    </a>
-                    <a href="#" class="youtube-icon social-icon">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-
-                </div>
-
-            </div><!-- end .widget_social_media -->
-
-        </div><!-- end .span6 -->
-    </div><!-- end .row -->
-
-    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-
-</div><!-- end #footer-bottom -->
 
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
@@ -900,6 +857,38 @@
     ga('create', 'UA-51202941-1', 'mathieu-savy.com');
     ga('send', 'pageview');
 
+</script>
+
+<script>
+    $(document).ready(function () {
+        var form = $('#contact_form');
+        var mail_confirm = $('#mail_confirmation');
+
+        mail_confirm.hide();
+
+        form.submit(function (e) {
+            e.preventDefault();
+
+            $.post('contact.php', form.serialize(), function (data) {
+                console.log('success ! ' + data);
+                mail_confirm.fadeIn(100).delay(3000).fadeOut(500);
+                form.find('input[type=text], input[type=email], textarea').val('');
+            });
+        });
+
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 600);
+                    return false;
+                }
+            }
+        });
+    });
 </script>
 
 </body>

@@ -1,0 +1,15 @@
+{
+    "name": "mrblackus/mathieu-cv",
+    "description": "Mathieu Savy - IT Student",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mathieu Savy",
+            "email": "mathieu.savy@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "dev-master"
+    }
+}
